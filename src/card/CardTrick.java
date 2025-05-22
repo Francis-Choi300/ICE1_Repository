@@ -107,6 +107,15 @@ public class CardTrick {
     
         // and search magicHand here
         //Then report the result here
+        System.out.println("\n_____Searching for a Match____");
+        String result = "No Match"; 
+        
+        for (Card card : magicHand){
+            if (card.toString().equals(pickCard.toString()))
+                { result = "Match";}
+        }
+        System.out.println("Result: " + result);
+        
         // add one luckcard hard code 2,clubs
     }
     
