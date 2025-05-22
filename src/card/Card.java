@@ -12,6 +12,9 @@ package card;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author srinivsi
+ * Modified by: Yoon-Ho Choi 
+ * 991809741
+ * May 21, 2025
  */
 public class Card {
 
@@ -47,6 +50,10 @@ public class Card {
         this.value = value;
     }
    
+    @Override
+    public String toString(){
+        return "Card Suit: " + this.getSuit() + "\n" + "Card Value: " + this.getValue();
+    }
    
     
 }
