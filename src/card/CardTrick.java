@@ -43,18 +43,22 @@ public class CardTrick {
         Card luckyCard = new Card();
             luckyCard.setSuit("Spades");
             luckyCard.setValue(1);
-        System.out.println(pickCard.toString());
+        System.out.println(luckyCard.toString());
     
         // and search magicHand here
         //Then report the result here
         System.out.println("\n_____Searching for a Match____");
         String result = "No Match"; 
+        String winLose = "Loser";
         
         for (Card card : magicHand){
             if (card.toString().equals(luckyCard.toString()))
-                { result = "Match";}
+                { result = "Match";
+                  winLose = "Winner";
+                }
         }
         System.out.println("Result: " + result);
+        System.out.println("You are a " + winLose + "!!!!!!");
         
 
     }
